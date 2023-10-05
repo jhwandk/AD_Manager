@@ -2,7 +2,9 @@
 # preserving find and replace value during the run-time of the program
 
 <#
-    Browse AD function/GUI is not my own work (please see function for credit)
+    The function on the very bottom, Browse AD function/GUI is NOT my own work (please see function for credit)
+    all other functions are my work
+    Author: Jinhwan Kim
 #>
 
 Set-ExecutionPolicy Bypass -Scope Process -Force

@@ -393,20 +393,20 @@ function ModifyAttribute
                 {
                     New-Item -ItemType File -Path $PlaceHolderFilePath | Out-Null
                     $PlaceHolderContent = "`nPhysicalDeliveryOfficeName"
-                    $PlaceHolderContent += "`tHeadquarters - Lake Forest, CA"
-                    $PlaceHolderContent += "`tHeadquarters - Foothill Ranch, CA"
+                    $PlaceHolderContent += "`tHeadquarters - ABC, CA"
+                    $PlaceHolderContent += "`tHeadquarters - XYZ, CA"
                     $PlaceHolderContent += "`nStreetAddress"
-                    $PlaceHolderContent += "`t25520 Commercentre Drive, 1st Floor"
-                    $PlaceHolderContent += "`t27442 Portola Pkwy #300"
+                    $PlaceHolderContent += "`tABC Drive, 1st Floor"
+                    $PlaceHolderContent += "`tXYZ Pkwy #300"
                     $PlaceHolderContent += "`nL"
-                    $PlaceHolderContent += "`tLake Forest"
-                    $PlaceHolderContent += "`tFoothill Ranch"
+                    $PlaceHolderContent += "`tNice City"
+                    $PlaceHolderContent += "`tGood City"
                     $PlaceHolderContent += "`nST"
                     $PlaceHolderContent += "`tCA"
                     $PlaceHolderContent += "`tCA"
                     $PlaceHolderContent += "`nPostalCode"
-                    $PlaceHolderContent += "`t92630"
-                    $PlaceHolderContent += "`t92610"
+                    $PlaceHolderContent += "`t92000"
+                    $PlaceHolderContent += "`t92111"
                     Set-Content -Path $PlaceHolderFilePath -Value $PlaceHolderContent
                 }
                 $File = Get-Content $PlaceHolderFilePath
@@ -593,8 +593,8 @@ function BrowseAD()
 
 ShowCredit
 ShowUserMenu
-#$Usernames = @('Jinhwan.Kim', 'Spencer.McConnell', 'Chris.Davis')
+#$Usernames = @('Jinhwan.Kim', 'Mary.Jane', 'John.Doe')
 # Delete the cache file for attribute values remembered from run-time
-# $Usernames = @('Jinhwan.Kim', 'Spencer.McConnell')
+# $Usernames = @('Jinhwan.Kim', 'Mary.Jane')
 # ModifyAttribute -Usernames $Usernames -AttributeNames @('StreetAddress', 'PostalCode', 'State')
 # ShowAttribute $Usernames @('PhysicalDeliveryOfficeName', 'StreetAddress' , 'L', 'PostalCode', 'State')

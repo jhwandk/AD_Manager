@@ -1,6 +1,7 @@
 AD Manager Tool
 
 Author: Jinhwan Kim
+
 Date: 7/27/23
 
 This tool allows administrators to manage user attributes in Active Directory (AD) through a PowerShell-based menu.
